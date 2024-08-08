@@ -10,7 +10,7 @@ const receiver = new WebhookReceiver(
 );
 
 export async function POST(req: Request) {
-  try {
+  try { 
     const body = await req.text();
     const headerPayload = headers();
     const authorization = headerPayload.get("Authorization");
